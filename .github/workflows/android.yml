@@ -33,28 +33,28 @@ jobs:
           haxelib git lime https://github.com/HomuHomu833-haxe-stuff/lime --quiet
           
           # Flixel
-          haxelib git flixel https://github.com/HomuHomu833-haxe-stuff/cne-flixel  --quiet
+          haxelib git flixel https://github.com/HomuHomu833-haxe-stuff/cne-flixel --quiet
           haxelib git flixel-addons https://github.com/HomuHomu833-haxe-stuff/cne-flixel-addons --quiet
           
           # Other Libraries
-          haxelib git hscript-improved https://github.com/CodenameCrew/hscript-improved codename-dev
-          haxelib git flxanimate https://github.com/CodenameCrew/cne-flxanimate
-          haxelib git hxdiscord_rpc https://github.com/CodenameCrew/cne-hxdiscord_rpc
-          haxelib install funkin-modchart 1.2.4
-          haxelib git hxvlc https://github.com/HomuHomu833-haxe-stuff/cne-hxvlc
+          haxelib git hscript-improved https://github.com/CodenameCrew/hscript-improved codename-dev --quiet
+          haxelib git flxanimate https://github.com/CodenameCrew/cne-flxanimate --quiet
+          haxelib git hxdiscord_rpc https://github.com/CodenameCrew/cne-hxdiscord_rpc --quiet
+          haxelib install funkin-modchart 1.2.4 --quiet
+          haxelib git hxvlc https://github.com/HomuHomu833-haxe-stuff/cne-hxvlc --quiet
           
           # Documentation and other features
-          haxelib git away3d https://github.com/CodenameCrew/away3d
-          # haxelib install dox
-          haxelib install markdown
-          haxelib install hxcpp-debug-server
+          haxelib git away3d https://github.com/CodenameCrew/away3d --quiet
+          # haxelib install dox --quiet
+          haxelib install markdown --quiet
+          haxelib install hxcpp-debug-server --quiet
           
-          haxelib install nape-haxe4
+          haxelib install nape-haxe4 --quiet
           
-          haxelib git format https://github.com/HomuHomu833-haxe-stuff/format
-          haxelib git hxp https://github.com/HomuHomu833-haxe-stuff/hxp
+          haxelib git format https://github.com/HomuHomu833-haxe-stuff/format --quiet
+          haxelib git hxp https://github.com/HomuHomu833-haxe-stuff/hxp --quiet
           
-          haxelib git hxcpp https://github.com/HomuHomu833-haxe-stuff/hxcpp
+          haxelib git hxcpp https://github.com/HomuHomu833-haxe-stuff/hxcpp --quiet
       - run: |
           echo "HXCPP_COMPILE_CACHE=~/.hxcpp" >> $GITHUB_ENV
       - name: Installing/Updating libraries
